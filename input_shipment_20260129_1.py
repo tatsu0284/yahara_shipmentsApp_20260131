@@ -32,7 +32,7 @@ if app_mode == "【担当者】出荷見込み入力":
             staff = st.selectbox("あなたの名前", STAFF_MEMBERS)
         with col2:
             veg = st.selectbox("野菜の種類", VEGETABLES)
-            qty = st.number_input("出荷見込み数量", min_value=0, step=1)
+            qty = st.number_input("出荷見込み数量", min_value=1, step=1)
         
         submitted = st.form_submit_button("データを送信")
         
